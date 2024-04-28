@@ -1,0 +1,502 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(120, 120, 129, 0.1019607843) 0px 3px 3px 3px;
+  height: 75px;
+  z-index: 4;
+}
+.header .header_grid {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-family: "Abril Fatface", serif;
+  gap: 20px;
+  height: 70px;
+}
+.header .header_grid img {
+  height: 100px;
+}
+.header .header_grid h1 {
+  color: #a08fb7;
+  font-weight: 100;
+  margin: 0;
+}
+.header .header_links {
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 0;
+}
+.header .header_links ul {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  list-style: none;
+}
+.header .header_links ul li {
+  font-family: "Abril Fatface", serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header .header_links ul li a {
+  text-decoration: none;
+  position: relative;
+  color: #a08fb7;
+}
+.header .header_links ul li a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: #a08fb7;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+body .introduction .image-container {
+  position: relative;
+}
+body .introduction .image-container img {
+  width: 100%;
+  object-fit: cover;
+  height: calc(100vh - 60px);
+}
+body .introduction .image-container .arrow-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .introduction .image-container .arrow-container a img {
+  height: 30px;
+}
+body .introduction .text-container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  clip-path: inset(0);
+  text-align-last: center;
+}
+body .introduction .text-container .reveal-text {
+  color: white;
+  font-size: 24px;
+  transition: opacity 1s ease-in-out;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 4px;
+  font-weight: 100;
+  text-align: center;
+}
+body .aProposDeMoi {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  align-items: center;
+}
+body .aProposDeMoi h2 {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+body .aProposDeMoi .container_apropos {
+  display: flex;
+  place-items: center;
+  width: 60%;
+  justify-content: center;
+}
+body .aProposDeMoi .container_apropos img {
+  padding: 50px;
+  max-width: 40%;
+}
+body .aProposDeMoi .container_apropos p {
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+  margin: 10px;
+  text-align: justify;
+}
+
+.a_propos {
+  background: #d8c7df;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  place-items: center;
+  padding: 30px;
+  width: auto;
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.a_propos h2 {
+  font-family: "Abril Fatface", serif;
+  color: #ffffff;
+  font-weight: 100;
+}
+.a_propos .a_propos_content {
+  box-shadow: rgba(120, 120, 129, 0.1019607843) 0px 3px 3px 3px;
+  border-radius: 30px;
+  background: #f9f0fd;
+  width: 100%;
+  height: 100%;
+}
+.a_propos .a_propos_content .project-container {
+  display: flex;
+  flex-direction: row;
+}
+.a_propos .a_propos_content .project-container .image_wrapper {
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.a_propos .a_propos_content .project-container .image_wrapper #image_kasa {
+  width: 100%;
+}
+.a_propos .a_propos_content .project-container .image_wrapper img {
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+}
+.a_propos .a_propos_content .project-container .image_wrapper img:hover {
+  filter: blur(2px) opacity(0.7);
+}
+.a_propos .a_propos_content .project-container .image_wrapper .project-label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  font-family: "Abril Fatface", serif;
+  /* font-weight: bold; */
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  animation: titleHover 0.5s ease-in-out;
+  color: black;
+  font-size: x-large;
+  letter-spacing: 1px;
+}
+.a_propos .a_propos_content .project-container .image_wrapper .project-label img {
+  pointer-events: none;
+}
+.a_propos .a_propos_content .project-container .image_wrapper:hover .project-label {
+  display: block;
+}
+.a_propos .a_propos_content .project-container .text_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.a_propos .a_propos_content .project-container .text_wrapper h3 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.a_propos .a_propos_content .project-container .text_wrapper .mission {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+.a_propos .a_propos_content .project-container .text_wrapper .mission .container_mission {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 30px;
+  gap: 10px;
+}
+.a_propos .a_propos_content .project-container .text_wrapper .mission .container_mission h4 {
+  font-family: "Abril Fatface", serif;
+  margin: 0;
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+.a_propos .a_propos_content .project-container .text_wrapper .mission .container_mission p {
+  font-family: "Abril Fatface", serif;
+  margin: 0;
+  font-weight: 100;
+}
+
+.mesServices {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  gap: 40px;
+}
+.mesServices h2 {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.mesServices .capacity_container {
+  position: relative;
+  width: 95%;
+  display: flex;
+  padding: 70px 0 0 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 0;
+  background-color: #f9f0fd;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.mesServices .capacity_container .capacity_card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.mesServices .capacity_container .capacity_card:hover {
+  height: 320px;
+}
+.mesServices .capacity_container .capacity_card .capacity_image {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -40%;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.mesServices .capacity_container .capacity_card .capacity_image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.mesServices .capacity_container .capacity_card .content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.mesServices .capacity_container .capacity_card .content h3 {
+  letter-spacing: 3px;
+  margin: 10px;
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+}
+.mesServices .capacity_container .capacity_card .content p {
+  font-family: "Abril Fatface", serif;
+  font-size: 15px;
+  color: #a08fb7;
+}
+.mesServices .capacity_container .capacity_card:hover .content {
+  margin-top: 20px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.contact {
+  width: 50%;
+  margin: auto;
+}
+.contact p {
+  margin: 0;
+}
+.contact > * {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  font-weight: 100;
+  color: #a08fb7;
+}
+.contact form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.contact form .input-group {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+.contact form .input-group .nom_prenom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact form input[name=name],
+.contact form input[name=prenom],
+.contact form input[name=email],
+.contact form input[name=objet],
+.contact form textarea[name=message] {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.contact form input[name=name]:focus,
+.contact form input[name=prenom]:focus,
+.contact form input[name=email]:focus,
+.contact form input[name=objet]:focus,
+.contact form textarea[name=message]:focus {
+  outline: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  border: 2px solid #a08fb7;
+  color: #a08fb7;
+}
+.contact form textarea[name=message] {
+  height: 150px;
+  font-size: 1.2em;
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+  padding: 10px;
+  scrollbar-width: none;
+  width: 100%;
+}
+.contact form label {
+  margin: 15px 0;
+}
+.contact form textarea {
+  border: none;
+  resize: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  width: 100%;
+}
+.contact form input[type=submit] {
+  margin: 40px 0;
+  width: 40%;
+  place-self: center;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  font-family: "Abril Fatface", serif;
+  color: #a08fb7;
+  font-size: large;
+}
+.contact form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #f2ecf9;
+}
+
+footer img {
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+footer .background-image {
+  width: 100%;
+  background-color: #f2ecf9;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .background-image .logo-wrapper {
+  text-align: center;
+}
+footer .background-image .logo-wrapper a {
+  text-decoration: auto;
+}
+footer .background-image .logo-wrapper p {
+  font-family: "Abril Fatface", serif;
+  color: black;
+  margin: 0;
+}
+
+@media (max-width: 1223px) {
+  .text_wrapper h3 {
+    font-size: 12px;
+  }
+  .container_mission h4,
+  p {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+}
+@media (max-width: 1130px) {
+  .header_links ul li a {
+    font-size: 15px;
+  }
+  .container_apropos {
+    width: 100% !important;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .project-container .image_wrapper img {
+    width: 100%;
+  }
+  .container_mission {
+    padding: 0 20px !important;
+  }
+}
+@media (max-width: 1023px) {
+  header {
+    position: fixed;
+  }
+}
+@media (max-width: 790px) {
+  .container_apropos {
+    flex-direction: column;
+  }
+  .container_apropos div p {
+    text-align-last: center;
+  }
+  .contact {
+    width: 80%;
+  }
+  .input-group {
+    flex-direction: column !important;
+    gap: unset !important;
+  }
+}
+@media (max-width: 535px) {
+  .header_links ul li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    justify-content: center;
+  }
+  .header .header_links {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
