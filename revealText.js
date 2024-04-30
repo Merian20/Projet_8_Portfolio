@@ -26,7 +26,6 @@ function typewriter() {
         if (iIndex != aText.length) {
             iArrLength = aText[iIndex].length;
 
-            // Ajouter la classe "visible" pour afficher "Voir la suite" de manière fluide
             let voirSuite = document.getElementById("voir-suite");
             voirSuite.classList.add("visible");
 

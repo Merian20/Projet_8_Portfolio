@@ -255,6 +255,7 @@ body .aProposDeMoi .container_apropos p {
   background-color: #f9f0fd;
   border-radius: 30px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 .mesServices .capacity_container .capacity_card {
   position: relative;
@@ -278,10 +279,15 @@ body .aProposDeMoi .container_apropos p {
   width: 260px;
   height: 260px;
   top: -40%;
-  left: 8px;
+  align-self: center;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 15px;
+}
+@media (max-width: 400px) {
+  .mesServices .capacity_container .capacity_card .capacity_image {
+    left: 0;
+  }
 }
 .mesServices .capacity_container .capacity_card .capacity_image img {
   max-width: 100%;
@@ -314,6 +320,12 @@ body .aProposDeMoi .container_apropos p {
   opacity: 1;
   transition-delay: 0.2s;
 }
+@media (max-width: 400px) {
+  .mesServices .capacity_container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
 
 .contact {
   width: 50%;
@@ -343,11 +355,7 @@ body .aProposDeMoi .container_apropos p {
   flex-direction: column;
   width: 100%;
 }
-.contact form input[name=name],
-.contact form input[name=prenom],
-.contact form input[name=email],
-.contact form input[name=objet],
-.contact form textarea[name=message] {
+.contact form input, .contact form textarea {
   height: 50px;
   font-size: 1.2em;
   border: none;
@@ -359,18 +367,14 @@ body .aProposDeMoi .container_apropos p {
   box-sizing: border-box;
   width: 100%;
 }
-.contact form input[name=name]:focus,
-.contact form input[name=prenom]:focus,
-.contact form input[name=email]:focus,
-.contact form input[name=objet]:focus,
-.contact form textarea[name=message]:focus {
+.contact form input:focus, .contact form textarea:focus {
   outline: none;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
   border-radius: 20px;
   border: 2px solid #a08fb7;
   color: #a08fb7;
 }
-.contact form textarea[name=message] {
+.contact form textarea {
   height: 150px;
   font-size: 1.2em;
   font-family: "Merriweather", serif;
@@ -381,13 +385,6 @@ body .aProposDeMoi .container_apropos p {
 }
 .contact form label {
   margin: 15px 0;
-}
-.contact form textarea {
-  border: none;
-  resize: none;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-  border-radius: 20px;
-  width: 100%;
 }
 .contact form input[type=submit] {
   margin: 40px 0;
@@ -479,12 +476,12 @@ footer .background-image .logo-wrapper p {
     gap: unset !important;
   }
 }
-@media (max-width: 535px) {
+@media (max-width: 560px) {
   .header_links ul li a {
     font-size: 13px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .header {
     justify-content: center;
   }
