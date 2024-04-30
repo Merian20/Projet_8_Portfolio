@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Portfolios Hallez Sophie</title>
 </head>
 
@@ -182,27 +182,28 @@
     <section class="contact" id="mecontacter">
         <h2>Contact</h2>
         <p>Vous avez un projet ? Vous souhaitez mon CV ? Discutons-en !</p>
-        <form method="post" action="/envoyer-email">
+        <form method="post" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="fb01f2a6-15f7-4a31-b678-ae31bc2ef2af">
             <div class="input-group">
                 <div class="nom_prenom">
                     <label for="name">Nom</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                 </div>
                 <div class="nom_prenom">
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom">
+                    <input type="text" name="prenom" id="prenom" required>
                 </div>
             </div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
             <label for="objet">Objet</label>
-            <input type="text" name="objet" id="objet">
+            <input type="text" name="objet" id="objet" required>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
             <input type="submit" value="Envoyer">
         </form>
     </section>
-    <script src="script-front.js"></script>
 </body>
 
 <footer>
@@ -219,6 +220,5 @@
     </div>
 </footer>
 <script src="smoothScroll.js"></script>
-<script src="showHamburger.js"></script>
 
 </html>

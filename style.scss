@@ -12,7 +12,7 @@
         display: flex;
         align-items: center;
         font-size: 10px;
-        font-family: "Abril Fatface", serif;
+        font-family: "Merriweather", serif;
         gap: 20px;
         height: 70px;
 
@@ -39,7 +39,7 @@
             list-style: none;
 
             li {
-                font-family: "Abril Fatface", serif;
+                font-family: "Merriweather", serif;
                 cursor: pointer;
                 transition: all .3s;
 
@@ -63,21 +63,6 @@
             }
         }
     }
-
-    // .small_header {
-    //     height: 60px;
-    //     display: none;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     padding: 0.75rem 1.25rem;
-    //     z-index: 4;
-    //     position: fixed;
-    //     top: 0px;
-    //     width: 100%;
-    //     background-color: white;
-    //     box-shadow: rgba(53, 53, 71, 0.1019607843) 2px 3px 8px 3px;
-    //     display: none;
-    // }
 }
 
 
@@ -120,9 +105,9 @@ body {
                 color: white;
                 font-size: 24px;
                 transition: opacity 1s ease-in-out;
-                font-family: "Abril Fatface", serif;
+                font-family: "Merriweather", serif;
                 letter-spacing: 4px;
-                font-weight: 100;
+                // font-weight: 100;
                 text-align: center;
 
             }
@@ -137,9 +122,9 @@ body {
 
         h2 {
             text-align: center;
-            font-family: "Abril Fatface", serif;
+            font-family: "Merriweather", serif;
             color: #a08fb7;
-            font-weight: 100;
+            // font-weight: 100;
             letter-spacing: 5px;
             text-transform: uppercase;
         }
@@ -156,7 +141,7 @@ body {
             }
 
             p {
-                font-family: "Abril Fatface", serif;
+                font-family: "Merriweather", serif;
                 color: #a08fb7;
                 margin: 10px;
                 text-align: justify;
@@ -180,9 +165,9 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 
     h2 {
-        font-family: "Abril Fatface", serif;
+        font-family: "Merriweather", serif;
         color: #ffffff;
-        font-weight: 100;
+        // font-weight: 100;
     }
 
     .a_propos_content {
@@ -227,12 +212,12 @@ body {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    border-radius: 15px;
-                    font-family: "Abril Fatface", serif;
-                    /* font-weight: bold; */
+                    // border-radius: 15px;
+                    font-family: "Merriweather", serif;
+                    font-weight: bold;
                     text-align: center;
                     transition: opacity 0.3s ease-in-out;
-                    animation: titleHover 0.5s ease-in-out;
+                    // animation: titleHover 0.5s ease-in-out;
                     color: black;
                     font-size: x-large;
                     letter-spacing: 1px;
@@ -244,7 +229,6 @@ body {
 
                 &:hover .project-label {
                     display: block;
-                    // animation: titleHover 0.5s ease-in-out;
                 }
             }
 
@@ -257,8 +241,8 @@ body {
                 // gap: 15px;
 
                 h3 {
-                    font-family: "Abril Fatface", serif;
-                    font-weight: 100;
+                    font-family: "Merriweather", serif;
+                    // font-weight: 100;
                     letter-spacing: 1px;
                     text-decoration: underline;
                 }
@@ -268,7 +252,7 @@ body {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
-                    gap: inherit;
+                    gap: 5px;
 
                     .container_mission {
                         display: flex;
@@ -278,14 +262,14 @@ body {
                         gap: 10px;
 
                         h4 {
-                            font-family: "Abril Fatface", serif;
+                            font-family: "Merriweather", serif;
                             margin: 0;
                             letter-spacing: 3px;
                             text-decoration: underline;
                         }
 
                         p {
-                            font-family: "Abril Fatface", serif;
+                            font-family: "Merriweather", serif;
                             margin: 0;
                             font-weight: 100;
                         }
@@ -306,9 +290,9 @@ body {
 
     h2 {
         text-align: center;
-        font-family: "Abril Fatface", serif;
+        font-family: "Merriweather", serif;
         color: #a08fb7;
-        font-weight: 100;
+        // font-weight: 100;
         letter-spacing: 5px;
         text-transform: uppercase;
     }
@@ -352,6 +336,7 @@ body {
                 left: 8px;
                 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
                 z-index: 1;
+                border-radius: 15px;
 
                 img {
                     max-width: 100%;
@@ -372,12 +357,12 @@ body {
                 h3 {
                     letter-spacing: 3px;
                     margin: 10px;
-                    font-family: "Abril Fatface", serif;
+                    font-family: "Merriweather", serif;
                     color: #a08fb7;
                 }
 
                 p {
-                    font-family: "Abril Fatface", serif;
+                    font-family: "Merriweather", serif;
                     font-size: 15px;
                     color: #a08fb7;
                 }
@@ -403,7 +388,7 @@ body {
 
     >* {
         text-align: center;
-        font-family: "Abril Fatface", serif;
+        font-family: "Merriweather", serif;
         font-weight: 100;
         color: #a08fb7;
     }
@@ -442,10 +427,6 @@ body {
             width: 100%;
         }
 
-        // input[name="name"], input[name="prenom"] {
-        //     width: 420px;
-        // }
-
         input[name="name"]:focus,
         input[name="prenom"]:focus,
         input[name="email"]:focus,
@@ -462,7 +443,7 @@ body {
         textarea[name="message"] {
             height: 150px;
             font-size: 1.2em;
-            font-family: "Abril Fatface", serif;
+            font-family: "Merriweather", serif;
             color: #a08fb7;
             padding: 10px;
             scrollbar-width: none;
@@ -489,7 +470,7 @@ body {
             border-radius: 20px;
             border: none;
             box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-            font-family: "Abril Fatface", serif;
+            font-family: "Merriweather", serif;
             color: #a08fb7;
             font-size: large;
 
@@ -526,7 +507,7 @@ footer {
             }
 
             p {
-                font-family: "Abril Fatface", serif;
+                font-family: "Merriweather", serif;
                 color: black;
                 margin: 0;
             }
