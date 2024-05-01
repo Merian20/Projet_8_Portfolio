@@ -7,6 +7,7 @@
     box-shadow: rgba(120, 120, 129, 0.1019607843) 0px 3px 3px 3px;
     height: 75px;
     z-index: 4;
+    // position: fixed;
 
     .header_grid {
         display: flex;
@@ -535,11 +536,11 @@ footer {
     }
 }
 
-@media (max-width: 1023px) {
-    header {
-        position: fixed;
-    }
-}
+// @media (max-width: 1023px) {
+//     header {
+//         position: fixed;
+//     }
+// }
 
 @media (max-width: 790px) {
     .container_apropos {
